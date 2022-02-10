@@ -1,9 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --default-green: #2ED886;
+  --primary-green: #45C14F;
+  --primary-blue: #52A5D9;
+}
+
+* {
+  @apply box-border;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -11,6 +25,19 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+
+.bg-default-green {
+  background-color: var(--default-green);
+}
+
+.bg-primary-green {
+  background-color: var(--primary-green);
+}
+
+.menu-items {
+  @apply flex space-x-4;
+}
+
+.menu-items .menu-item {
+  @apply text-white hover:border-solid hover:border-2 px-3 py-2 text-sm font-medium;
 }
