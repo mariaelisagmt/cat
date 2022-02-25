@@ -3,8 +3,8 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import Logo from '../../assets/logo.svg'
-import LogoMobile from '../../assets/logo-icon.svg'
+import Logo from '../../assets/logo-cat.png'
+import LogoMobile from '../../assets/logo-cat-icon.svg'
 
 const Header: NextComponentType = pros => {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -63,11 +63,11 @@ const Header: NextComponentType = pros => {
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <div className="hidden lg:block h-8 w-auto">
-                  <Image src={Logo} alt="Logo" height={36} />
+                  <Image src={Logo} alt="Logo" height={40} width={150}/>
                 </div>
 
                 <div className="block lg:hidden h-8 w-auto">
-                  <Image src={LogoMobile} alt="Logo" height={36} />
+                  <Image src={LogoMobile} alt="Logo" height={30} />
                 </div>
               </div>
 
