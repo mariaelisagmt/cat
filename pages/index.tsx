@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Header from "../components/Header";
 import Button from "../components/Button";
+import Tag from "../components/Tag";
 import Footer from "../components/Footer";
 
 import PersonThinking from "../assets/person-thinking.png";
@@ -30,22 +31,37 @@ const Home: NextPage = () => {
 
           </div>
 
-          <div className="image w-1/2">
+          <div className="image w-1/2 flex align-center justify-center">
             <Image src={PersonThinking} alt="Logo" />
           </div>
         </div>
 
         <div className="flex justify-between p-5">
-
           <div className="image w-1/2">
             <Image src={Peoples} alt="Logo" />
           </div>
-          <div className="flex flex-col w-1/2">
-            <h1 className="text-4xl font-medium" >Um espaço para diversos perfis:<br/>
-            Alunos, professores e instituições...</h1>
+          <div className="flex flex-col align-center justify-center w-1/2">
+            <h1 className="text-4xl font-medium leading-normal" >
+              Um espaço para <br /> diversos perfis:<br />
+              Alunos, professores e <br /> instituições...
+            </h1>
+          </div>
+        </div>
 
-            <Button value="Monte a sua avaliação" />
+        <div className="flex flex-col justify-center align-center p-5">
+          <h1 className="text-4xl font-medium text-center mb-6" >
+            Tipos de Ferramentas de Avaliação do PC 
+          </h1>
 
+          <div className="flex flex-wrap align-center justify-center">
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
+            <Tag value="Ferramentas Somativas"/>
           </div>
 
         </div>

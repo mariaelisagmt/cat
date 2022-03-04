@@ -63,7 +63,7 @@ const Header: NextComponentType = pros => {
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <div className="hidden lg:block h-8 w-auto">
-                  <Image src={Logo} alt="Logo" height={40} width={150}/>
+                  <Image src={Logo} alt="Logo" height={36} width={110}/>
                 </div>
 
                 <div className="block lg:hidden h-8 w-auto">
