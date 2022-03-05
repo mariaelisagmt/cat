@@ -15,41 +15,47 @@ const Home: NextPage = () => {
 
       <div className="container mx-auto pt-24">
 
-        <div className="flex justify-between p-5">
-          <div className="flex flex-col w-1/2">
-            <h1 className="text-4xl font-medium" >Como avaliar o pensamento<br/>computacional?</h1>
-
+        <div className="flex justify-between">
+          <div className="flex flex-col w-1/2 justify-center p-10">
+            <h1 className="text-4xl font-semibold" >Como avaliar o pensamento<br/>computacional?</h1>
             <p className="my-5 text-2xl" >
               Essa e outras perguntas você responde aqui,
               peacock é um ambiente totalmente voltado ao ensino
               e avaliação do pensamento computacional, aqui você
               realizará testes rápidos e avaliações para medir o seu nível!
             </p>
-
             <Button value="Monte a sua avaliação" />
-
           </div>
-
           <div className="image w-1/2">
-            <Image src={PersonThinking} alt="Logo" />
+            <Image src={PersonThinking} alt="Logo" height={500} />
           </div>
         </div>
 
-        <div className="flex justify-between p-5">
-
+        <div className="flex justify-between">
           <div className="image w-1/2">
-            <Image src={Peoples} alt="Logo" />
+            <Image src={Peoples} alt="Logo" width={600} />
           </div>
-          <div className="flex flex-col w-1/2">
-            <h1 className="text-4xl font-medium" >Um espaço para diversos perfis:<br/>
+          <div className="flex flex-col w-1/2 justify-center p-10">
+            <h1 className="text-4xl font-medium mt-5" >Um espaço para diversos perfis:<br/>
             Alunos, professores e instituições...</h1>
-
-            <Button value="Monte a sua avaliação" />
-
           </div>
-
         </div>
-      </div>      
+          <br/>
+          <h1 className="text-4xl font-medium" >Tipos de ferramentas de PC</h1>
+          <br/>
+        <div className="flex flex-wrap justify-between space-y-4">
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+          <Button value="Ferramenta Somativa" />
+        </div>
+      </div>
+      <br/>
+      <br/>
       <Footer />
     </>
   );
